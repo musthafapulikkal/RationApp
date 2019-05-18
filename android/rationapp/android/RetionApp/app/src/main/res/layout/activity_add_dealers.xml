@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddDealersActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Dealer Details:"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="15dp"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Dealer name"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:id="@+id/admin_id_dealer_name"
+            android:background="@drawable/edittextbackground"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:hint="Dealer Email"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/admin_id_dealer_email"
+            android:background="@drawable/edittextbackground"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Dealer Phone"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/admin_id_dealer_phone"
+            android:background="@drawable/edittextbackground"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Dealer Licen no."
+            android:layout_marginTop="15dp"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:id="@+id/admin_id_dealer_licen"
+            android:background="@drawable/edittextbackground"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:text="Add"
+            android:id="@+id/btn_add_dealer"
+            android:textColor="@color/white"
+            android:background="@color/orange"/>
+    </LinearLayout>
+
+</RelativeLayout>

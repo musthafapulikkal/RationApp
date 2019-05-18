@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activity.RationDealerLogin">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="RationDealer LoginPage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="80dp"
+            android:drawableRight="@drawable/ic_icon_email"
+            android:paddingRight="8dp"
+            android:id="@+id/id_rationd_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            />
+        <EditText
+            android:layout_marginTop="140dp"
+            android:drawableRight="@drawable/ic_icon_password"
+            android:paddingRight="8dp"
+            android:id="@+id/id_rationd_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="#ff8000"
+            android:drawableRight="@drawable/ic_icon_login"
+            android:paddingRight="8dp"
+            android:layout_below="@+id/id_rationd_password"
+            android:layout_marginTop="40dp"
+            android:text="login"
+            android:id="@+id/btn_rationd_login"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

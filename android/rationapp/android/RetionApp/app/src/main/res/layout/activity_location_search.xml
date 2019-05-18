@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".Activity.LocationSearch">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/edittextbackground"
+    android:hint="state"
+    android:id="@+id/ustate"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextbackground"
+       android:hint="district"
+        android:id="@+id/udist"
+        android:layout_below="@+id/ustate"
+        android:layout_marginTop="20dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="city"
+        android:id="@+id/ucity"
+        android:layout_below="@+id/udist"
+        android:layout_marginTop="20dp"
+
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ucity"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:text="Search"
+    android:background="@color/red"
+    android:textColor="@color/white"
+    android:id="@+id/btnseachplace"/>
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddProductActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Product Details:"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="15dp"/>
+    <LinearLayout
+        android:id="@+id/linear_product"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Product name"
+            android:id="@+id/id_admin_prod_name"
+            android:paddingLeft="8dp"
+            android:background="@drawable/edittextbackground"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/id_admin_prod_price"
+            android:background="@drawable/edittextbackground"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:hint="Price"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextbackground"
+            android:inputType="text"
+            android:id="@+id/id_admin_prod_qty"
+            android:paddingLeft="8dp"
+            android:hint="Quantity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+        <CheckBox
+            android:id="@+id/id_product_bpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="BPL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/id_product_apl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="APL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_product_bpl" />
+        <CheckBox
+            android:id="@+id/id_product_subcidy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Subsidy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_product_bpl" />
+        <CheckBox
+            android:id="@+id/id_product_AAY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="AAY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_product_bpl" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/linear_product"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/camera"
+        android:scaleType="fitXY"
+        android:id="@+id/admin_img_prod"
+        android:layout_marginTop="15dp"
+        />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/admin_img_prod"
+            android:text="Choose"
+            android:id="@+id/admin_btn_choose_prod"
+            android:textSize="10dp"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/admin_img_prod" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admin_img_prod"
+            android:layout_marginTop="15dp"
+            android:text="Add"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:id="@+id/admin_btn_add_prod"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

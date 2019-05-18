@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:background="?android:attr/selectableItemBackground">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/img_order"
+        />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_order"
+        android:layout_toRightOf="@id/img_order"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/id_dealer_uemail"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_order"
+        android:layout_toRightOf="@id/img_order"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/id_dealer_uemail"
+        android:id="@+id/id_dealer_pname"/>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:textSize="8dp"
+        android:layout_toEndOf="@+id/id_dealer_pname"
+        android:text="delivered"
+        android:id="@+id/id_delivered"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/id_dealer_pname" />
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:background="@drawable/background"
+    tools:context=".Activity.UserRegistrationActivity">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:layout_marginTop="80dp"
+    android:id="@+id/reg_id_email"
+    android:hint="Email"
+    android:inputType="textEmailAddress"
+    android:paddingLeft="8dp"
+    android:drawableRight="@drawable/ic_icon_email"
+    android:paddingRight="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="140dp"
+        android:id="@+id/reg_id_username"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:drawableRight="@drawable/ic_icon_user"
+        android:paddingRight="10dp"/>
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="200dp"
+        android:id="@+id/reg_id_password"
+        android:hint="Password"
+        android:paddingLeft="8dp"
+        android:drawableRight="@drawable/ic_icon_password"
+        android:paddingRight="10dp"/>
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="260dp"
+        android:id="@+id/reg_id_card_no"
+        android:hint="Card no"
+        android:paddingLeft="8dp"
+        android:drawableRight="@drawable/ic_icon_card"
+        android:paddingRight="10dp"/>
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="320dp"
+        android:id="@+id/reg_id_proof_no"
+        android:hint="id Proof no"
+        android:paddingLeft="8dp"
+        android:drawableRight="@drawable/ic_icon_card"
+        android:paddingRight="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/orange"
+        android:layout_marginTop="380dp"
+        android:textColor="@color/white"
+        android:text="register"
+        android:id="@+id/btn_id_register"
+
+        />
+
+</RelativeLayout>

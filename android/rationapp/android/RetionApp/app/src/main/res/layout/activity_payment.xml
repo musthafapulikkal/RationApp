@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:background="@drawable/atm2"
+    tools:context=".Activity.PaymentActivity">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:hint="Holder name"
+    android:paddingLeft="10dp"
+    android:id="@+id/id_pay_holder"
+    android:background="@drawable/edittextbackground"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="cvv"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/id_pay_holder"
+        android:id="@+id/id_pay_cvv"
+        android:background="@drawable/edittextbackground"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="month"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/id_pay_cvv"
+        android:id="@+id/id_pay_expiry_month"
+        android:background="@drawable/edittextbackground"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="year"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/id_pay_cvv"
+        android:id="@+id/id_pay_expiry_year"
+        android:layout_toEndOf="@+id/id_pay_expiry_month"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/id_pay_expiry_month" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittextbackground"
+        android:layout_below="@+id/id_pay_expiry_month"
+        android:layout_marginTop="20dp"
+        android:id="@+id/id_pay_amount"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_pay_amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Pay"
+        android:id="@+id/btn_pay"
+        android:background="@color/red"
+        android:textColor="@color/white"/>
+</RelativeLayout>
